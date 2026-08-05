@@ -2,9 +2,7 @@
 
 A free, single-page reference for **Anthropic's Claude Code** — the AI coding agent that runs in your terminal.
 
-**Live site:** https://your-username.github.io/claude-code-guide/
-
-> ⚠️ **Placeholder link:** Replace `your-username` and the repository name with your actual GitHub Pages URL after hosting.
+**Live site:** https://samirjani03.github.io/Claude-Code-Cheatsheet/
 
 ---
 
