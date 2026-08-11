@@ -176,6 +176,33 @@ pre:hover .copy-btn,.term:hover .copy-btn{opacity:1}
   .content{padding:0 14px 60px}
   .section-desc{font-size:14px}
 }
+/* ===== Goldmine section ===== */
+.gold-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 8px}
+.gold-stat{background:linear-gradient(160deg,var(--bg-elev),var(--bg-elev2));border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;text-align:center}
+.gold-stat b{display:block;font-size:1.5rem;color:var(--accent-strong);font-family:var(--mono);line-height:1.2}
+.gold-stat{font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em}
+.gold-jump{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 20px}
+.gold-jump a{display:inline-flex;align-items:center;gap:6px;background:var(--bg-elev);border:1px solid var(--border);border-radius:999px;padding:4px 12px 4px 4px;font-size:12px;color:var(--text-2);transition:all .12s}
+.gold-jump a:hover{color:var(--text);border-color:var(--accent-border);background:var(--accent-soft);text-decoration:none}
+.gold-jump-num{font-family:var(--mono);font-size:10.5px;background:var(--accent-soft);color:var(--accent-strong);border:1px solid var(--accent-border);border-radius:999px;padding:1px 6px}
+.gold-cat{margin:26px 0 6px}
+.gold-cat-title{display:flex;align-items:center;gap:10px;font-size:1.05rem;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.gold-cat-num{font-family:var(--mono);font-size:12px;background:var(--accent);color:#fff;border-radius:6px;padding:2px 7px;letter-spacing:.03em}
+.gold-count{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--text-3);background:var(--bg-elev2);border:1px solid var(--border);border-radius:999px;padding:2px 10px}
+.gold-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+.gold-card{position:relative;background:var(--bg-elev);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;transition:all .14s;overflow:hidden}
+.gold-card:hover{background:var(--bg-hover);border-color:var(--accent-border);transform:translateY(-1px);box-shadow:0 4px 18px rgba(0,0,0,.35)}
+.gold-card:hover .copy-btn{opacity:1}
+.gold-top{display:flex;align-items:center;gap:8px;margin-bottom:6px;padding-right:74px}
+.gold-name{font-weight:600;font-size:13.8px;color:var(--text);line-height:1.35}
+.gold-chip{flex-shrink:0;font-family:var(--mono);font-size:10px;color:var(--accent-strong);background:var(--accent-soft);border:1px solid var(--accent-border);border-radius:5px;padding:1px 6px}
+.gold-dup{flex-shrink:0;font-family:var(--mono);font-size:10px;color:var(--text-3);border:1px solid var(--border-strong);border-radius:5px;padding:1px 5px;cursor:help}
+.gold-url{display:block;font-family:var(--mono);font-size:11.5px;color:var(--text-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:64px}
+.gold-url:hover{color:var(--accent-strong);text-decoration:underline}
+.gold-copy{top:10px;right:10px}
+.gold-note{margin-top:26px;background:var(--accent-soft);border:1px solid var(--accent-border);border-radius:var(--radius-sm);padding:12px 16px;font-size:13px;color:var(--text-2)}
+.gold-note strong{color:var(--accent-strong)}
+@media(max-width:640px){.gold-stats{grid-template-columns:repeat(2,1fr)}.gold-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -212,6 +239,7 @@ pre:hover .copy-btn,.term:hover .copy-btn{opacity:1}
   <a class="nav-link" href="#workflows">Pro Workflows</a>
   <a class="nav-link" href="#troubleshooting">Troubleshooting</a>
   <a class="nav-link" href="#quickref">Quick Reference Card</a>
+  <a class="nav-link" href="#goldmine">Goldmine 💎</a>
 
   <div class="nav-group">Resources</div>
   <a class="nav-link" href="#footer">Credits &amp; Sources</a>
@@ -1886,6 +1914,1023 @@ You are the documentation specialist. Follow these rules:
   <h3>The 60-second setup for Ollama (free)</h3>
   <div class="term"><span class="prompt">$</span><span class="cmd-text">curl -fsSL https://ollama.com/install.sh | sh && ollama pull glm-4.7-flash</span><button class="copy-btn" data-copy="curl -fsSL https://ollama.com/install.sh | sh && ollama pull glm-4.7-flash">copy</button></div>
   <div class="term"><span class="prompt">$</span><span class="cmd-text">export ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_AUTH_TOKEN=ollama && claude --model glm-4.7-flash</span><button class="copy-btn" data-copy="export ANTHROPIC_BASE_URL=http://localhost:11434 ANTHROPIC_AUTH_TOKEN=ollama && claude --model glm-4.7-flash">copy</button></div>
+<!-- ============ SECTION 17: GOLDMINE ============ -->
+<section class="section" id="goldmine">
+  <h2>17 · Goldmine — The Community Toolkit 💎</h2>
+  <p class="section-desc">The complete resource collection from the <em>"Claude Code Goldmine"</em> compilation — skills, plugins, MCP servers, cybersecurity tooling, and productivity hubs that supercharge Claude Code. Organized by category, every single link preserved <strong>exactly as listed</strong>, and all <strong>88 unique links verified live</strong> (August 2026).</p>
+  <div class="gold-stats">
+    <div class="gold-stat"><b>12</b>categories</div>
+    <div class="gold-stat"><b>116</b>links total</div>
+    <div class="gold-stat"><b>88</b>unique tools</div>
+    <div class="gold-stat"><b>100%</b>live-verified</div>
+  </div>
+  <div class="gold-jump">
+    <a href="#gold-01"><span class="gold-jump-num">01</span>Claude Code Guides, Learning &amp; Reference</a>
+    <a href="#gold-02"><span class="gold-jump-num">02</span>Claude Code Official Documentation &amp; Official Plugins</a>
+    <a href="#gold-03"><span class="gold-jump-num">03</span>Core Skills, Agents &amp; Engineering Workflows</a>
+    <a href="#gold-04"><span class="gold-jump-num">04</span>Memory, Context &amp; Token Efficiency</a>
+    <a href="#gold-05"><span class="gold-jump-num">05</span>MCP &amp; External Tool Integration</a>
+    <a href="#gold-06"><span class="gold-jump-num">06</span>Plugins &amp; Plugin Ecosystem</a>
+    <a href="#gold-07"><span class="gold-jump-num">07</span>Cybersecurity: Secure Code, AppSec &amp; Vulnerability</a>
+    <a href="#gold-08"><span class="gold-jump-num">08</span>Offensive Security, Recon, Bug Bounty &amp; Red Team</a>
+    <a href="#gold-09"><span class="gold-jump-num">09</span>Productivity, Review &amp; Developer Experience</a>
+    <a href="#gold-10"><span class="gold-jump-num">10</span>AI Routing, Free / Experimental Access &amp; Ollama</a>
+    <a href="#gold-11"><span class="gold-jump-num">11</span>Frontend, UI/UX, Content &amp; Creative Skills</a>
+    <a href="#gold-12"><span class="gold-jump-num">12</span>Meta / Reference / Discovery Hubs</a>
+  </div>
+  <div class="gold-cat" id="gold-01">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">01</span>Claude Code Guides, Learning &amp; Reference<span class="gold-count">12</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/affaan-m/ECC" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Guide / Everything Claude Code</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">github.com/affaan-m/ECC</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/affaan-m/ECC" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/collabs-inc/collab-public" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Collab public — Claude Code / agent resources</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/collabs-inc/collab-public" target="_blank" rel="noopener noreferrer">github.com/collabs-inc/collab-public</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/collabs-inc/collab-public" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/ykdojo/claude-code-tips" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code tips</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/ykdojo/claude-code-tips" target="_blank" rel="noopener noreferrer">github.com/ykdojo/claude-code-tips</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/ykdojo/claude-code-tips" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://maven.com/p/c513ad/claude-code-101-11-months-of-lessons-in-60-mins" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code 101 course</span>
+          <span class="gold-chip">maven.com</span>
+        </div>
+        <a class="gold-url" href="https://maven.com/p/c513ad/claude-code-101-11-months-of-lessons-in-60-mins" target="_blank" rel="noopener noreferrer">maven.com/p/c513ad/claude-code-101-11-months-of-lessons-in-60…</a>
+        <button class="copy-btn gold-copy" data-copy="https://maven.com/p/c513ad/claude-code-101-11-months-of-lessons-in-60-mins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/ThamJiaHe/claude-code-handbook" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Handbook</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/ThamJiaHe/claude-code-handbook" target="_blank" rel="noopener noreferrer">github.com/ThamJiaHe/claude-code-handbook</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/ThamJiaHe/claude-code-handbook" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://virtualuncle.com/github-repos-claude-code-productivity-2026/" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code productivity repositories article</span>
+          <span class="gold-chip">virtualuncle.com</span>
+        </div>
+        <a class="gold-url" href="https://virtualuncle.com/github-repos-claude-code-productivity-2026/" target="_blank" rel="noopener noreferrer">virtualuncle.com/github-repos-claude-code-productivity-2026/</a>
+        <button class="copy-btn gold-copy" data-copy="https://virtualuncle.com/github-repos-claude-code-productivity-2026/" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/Alishahryar1/free-claude-code" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Free Claude Code project/resources</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: AI Routing, Free / Experimental Access &amp; Ollama">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener noreferrer">github.com/Alishahryar1/free-claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/Alishahryar1/free-claude-code" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://dev.to/_vjk/i-made-claude-code-think-before-it-codes-heres-the-prompt-bf" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Think-before-it-codes article</span>
+          <span class="gold-chip">dev.to</span>
+        </div>
+        <a class="gold-url" href="https://dev.to/_vjk/i-made-claude-code-think-before-it-codes-heres-the-prompt-bf" target="_blank" rel="noopener noreferrer">dev.to/_vjk/i-made-claude-code-think-before-it-codes-heres-th…</a>
+        <button class="copy-btn gold-copy" data-copy="https://dev.to/_vjk/i-made-claude-code-think-before-it-codes-heres-the-prompt-bf" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://www.threads.com/@charliehills/post/DZP_iLWDqY0?xmt=AQG0S8o3ZiJ11gKdTPW0Vz5N_QrKM2MkPV7MTf3bf1x7xz3zHY33lWA7rDl0fxE0Rs6lmCto&amp;slof=1" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Charlie Hills Threads post</span>
+          <span class="gold-chip">threads.com</span>
+        </div>
+        <a class="gold-url" href="https://www.threads.com/@charliehills/post/DZP_iLWDqY0?xmt=AQG0S8o3ZiJ11gKdTPW0Vz5N_QrKM2MkPV7MTf3bf1x7xz3zHY33lWA7rDl0fxE0Rs6lmCto&amp;slof=1" target="_blank" rel="noopener noreferrer">www.threads.com/@charliehills/post/DZP_iLWDqY0?xmt=AQG0S8o3Zi…</a>
+        <button class="copy-btn gold-copy" data-copy="https://www.threads.com/@charliehills/post/DZP_iLWDqY0?xmt=AQG0S8o3ZiJ11gKdTPW0Vz5N_QrKM2MkPV7MTf3bf1x7xz3zHY33lWA7rDl0fxE0Rs6lmCto&amp;slof=1" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://www.linkedin.com/posts/brijpandeyji_most-people-learn-claude-code-in-the-wrong-share-7462527452980944896-huLz/?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAD_RfucBASOVlU_hKUKmGf7xNE3TqdCU_RQ&amp;utm_campaign=copy_link" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">LinkedIn Claude Code learning guide</span>
+          <span class="gold-chip">linkedin.com</span>
+        </div>
+        <a class="gold-url" href="https://www.linkedin.com/posts/brijpandeyji_most-people-learn-claude-code-in-the-wrong-share-7462527452980944896-huLz/?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAD_RfucBASOVlU_hKUKmGf7xNE3TqdCU_RQ&amp;utm_campaign=copy_link" target="_blank" rel="noopener noreferrer">www.linkedin.com/posts/brijpandeyji_most-people-learn-claude-…</a>
+        <button class="copy-btn gold-copy" data-copy="https://www.linkedin.com/posts/brijpandeyji_most-people-learn-claude-code-in-the-wrong-share-7462527452980944896-huLz/?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAD_RfucBASOVlU_hKUKmGf7xNE3TqdCU_RQ&amp;utm_campaign=copy_link" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://x.com/i/status/2060715587387400424" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Ultimate skills collection article</span>
+          <span class="gold-chip">x.com</span>
+        </div>
+        <a class="gold-url" href="https://x.com/i/status/2060715587387400424" target="_blank" rel="noopener noreferrer">x.com/i/status/2060715587387400424</a>
+        <button class="copy-btn gold-copy" data-copy="https://x.com/i/status/2060715587387400424" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://www.notion.so/4-Claude-skills-that-make-your-resume-unrejectable-35deecf1692780818d31f988b2cb0e72" data-cat="01 — Claude Code Guides, Learning &amp; Reference">
+        <div class="gold-top">
+          <span class="gold-name">Resume-focused Claude skills article</span>
+          <span class="gold-chip">notion.so</span>
+        </div>
+        <a class="gold-url" href="https://www.notion.so/4-Claude-skills-that-make-your-resume-unrejectable-35deecf1692780818d31f988b2cb0e72" target="_blank" rel="noopener noreferrer">www.notion.so/4-Claude-skills-that-make-your-resume-unrejecta…</a>
+        <button class="copy-btn gold-copy" data-copy="https://www.notion.so/4-Claude-skills-that-make-your-resume-unrejectable-35deecf1692780818d31f988b2cb0e72" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-02">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">02</span>Claude Code Official Documentation &amp; Official Plugins<span class="gold-count">7</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://code.claude.com/docs" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude Code documentation</span>
+          <span class="gold-chip">code.claude.com</span>
+        </div>
+        <a class="gold-url" href="https://code.claude.com/docs" target="_blank" rel="noopener noreferrer">code.claude.com/docs</a>
+        <button class="copy-btn gold-copy" data-copy="https://code.claude.com/docs" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://code.claude.com/docs/en/plugins" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude Code plugins documentation</span>
+          <span class="gold-chip">code.claude.com</span>
+        </div>
+        <a class="gold-url" href="https://code.claude.com/docs/en/plugins" target="_blank" rel="noopener noreferrer">code.claude.com/docs/en/plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://code.claude.com/docs/en/plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://code.claude.com/docs/en/skills" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude Code skills documentation</span>
+          <span class="gold-chip">code.claude.com</span>
+        </div>
+        <a class="gold-url" href="https://code.claude.com/docs/en/skills" target="_blank" rel="noopener noreferrer">code.claude.com/docs/en/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://code.claude.com/docs/en/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://code.claude.com/docs/en/hooks" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude Code hooks documentation</span>
+          <span class="gold-chip">code.claude.com</span>
+        </div>
+        <a class="gold-url" href="https://code.claude.com/docs/en/hooks" target="_blank" rel="noopener noreferrer">code.claude.com/docs/en/hooks</a>
+        <button class="copy-btn gold-copy" data-copy="https://code.claude.com/docs/en/hooks" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://claude.com/plugins#plugins" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude plugins marketplace</span>
+          <span class="gold-chip">claude.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem; Meta / Reference / Discovery Hubs">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://claude.com/plugins#plugins" target="_blank" rel="noopener noreferrer">claude.com/plugins#plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://claude.com/plugins#plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/anthropics/claude-code/tree/main/plugins" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude Code plugin repository</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/anthropics/claude-code/tree/main/plugins" target="_blank" rel="noopener noreferrer">github.com/anthropics/claude-code/tree/main/plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/anthropics/claude-code/tree/main/plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" data-cat="02 — Claude Code Official Documentation &amp; Official Plugins">
+        <div class="gold-top">
+          <span class="gold-name">Anthropic official Claude Code Setup plugin</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem; Productivity, Review &amp; Developer Experience">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" target="_blank" rel="noopener noreferrer">github.com/anthropics/claude-plugins-official/tree/main/plugi…</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-03">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">03</span>Core Skills, Agents &amp; Engineering Workflows<span class="gold-count">25</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/affaan-m/everything-claude-code" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Everything Claude Code / ECC</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/affaan-m/everything-claude-code" target="_blank" rel="noopener noreferrer">github.com/affaan-m/everything-claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/affaan-m/everything-claude-code" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/vercel-labs/skills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Vercel Skills — skills ecosystem</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Meta / Reference / Discovery Hubs">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/vercel-labs/skills" target="_blank" rel="noopener noreferrer">github.com/vercel-labs/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/vercel-labs/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Vercel Find Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Meta / Reference / Discovery Hubs">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills" target="_blank" rel="noopener noreferrer">github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/obra/superpowers" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Superpowers</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer">github.com/obra/superpowers</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/obra/superpowers" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/garrytan/gstack" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Full engineering team / gstack</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Productivity, Review &amp; Developer Experience">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/garrytan/gstack" target="_blank" rel="noopener noreferrer">github.com/garrytan/gstack</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/garrytan/gstack" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/DietrichGebert/ponytail" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Ponytail</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Productivity, Review &amp; Developer Experience">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">github.com/DietrichGebert/ponytail</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/DietrichGebert/ponytail" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/microsoft/SkillOpt" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">SkillOpt</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/microsoft/SkillOpt" target="_blank" rel="noopener noreferrer">github.com/microsoft/SkillOpt</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/microsoft/SkillOpt" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/sickn33/antigravity-awesome-skills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Antigravity Awesome Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/sickn33/antigravity-awesome-skills" target="_blank" rel="noopener noreferrer">github.com/sickn33/antigravity-awesome-skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/sickn33/antigravity-awesome-skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/virgiliojr94/book-to-skill" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Book-to-Skill</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/virgiliojr94/book-to-skill" target="_blank" rel="noopener noreferrer">github.com/virgiliojr94/book-to-skill</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/virgiliojr94/book-to-skill" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/rebelytics/one-skill-to-rule-them-all" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">One Skill to Rule Them All / Task Observer</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem; Productivity, Review &amp; Developer Experience">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/rebelytics/one-skill-to-rule-them-all" target="_blank" rel="noopener noreferrer">github.com/rebelytics/one-skill-to-rule-them-all</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/rebelytics/one-skill-to-rule-them-all" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/Sahir619/fable-method" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Fable 5 static skill / Fable method</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/Sahir619/fable-method" target="_blank" rel="noopener noreferrer">github.com/Sahir619/fable-method</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/Sahir619/fable-method" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/nidhinjs/prompt-master" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Prompt Master / Prompt Engineer Skill</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/nidhinjs/prompt-master" target="_blank" rel="noopener noreferrer">github.com/nidhinjs/prompt-master</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/nidhinjs/prompt-master" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/muratcankoylan/agent-skills-for-context-engineering" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Agent Skills for Context Engineering</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/muratcankoylan/agent-skills-for-context-engineering" target="_blank" rel="noopener noreferrer">github.com/muratcankoylan/agent-skills-for-context-engineering</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/muratcankoylan/agent-skills-for-context-engineering" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://claudemarketplaces.com/skills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Claude Marketplaces — skills directory</span>
+          <span class="gold-chip">claudemarketplaces.com</span><span class="gold-dup" title="Also listed in: Meta / Reference / Discovery Hubs">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://claudemarketplaces.com/skills" target="_blank" rel="noopener noreferrer">claudemarketplaces.com/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://claudemarketplaces.com/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/multica-ai/andrej-karpathy-skills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Andrej Karpathy Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank" rel="noopener noreferrer">github.com/multica-ai/andrej-karpathy-skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/multica-ai/andrej-karpathy-skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Karpathy CLAUDE.md</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md" target="_blank" rel="noopener noreferrer">github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/multica-ai/andrej-karpathy-skills/blob/main/CLAUDE.md" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/blader/humanizer" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Humanizer</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/blader/humanizer" target="_blank" rel="noopener noreferrer">github.com/blader/humanizer</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/blader/humanizer" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/juliusbrussee/caveman" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Caveman</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/juliusbrussee/caveman" target="_blank" rel="noopener noreferrer">github.com/juliusbrussee/caveman</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/juliusbrussee/caveman" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/petar-nauka/fact-check-skill" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Fact Check Skill</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/petar-nauka/fact-check-skill" target="_blank" rel="noopener noreferrer">github.com/petar-nauka/fact-check-skill</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/petar-nauka/fact-check-skill" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/pbakaus/impeccable" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Impeccable</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener noreferrer">github.com/pbakaus/impeccable</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/pbakaus/impeccable" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/coreyhaines31/marketingskills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Marketing Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener noreferrer">github.com/coreyhaines31/marketingskills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/coreyhaines31/marketingskills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/hardikpandya/stop-slop" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Stop Slop</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/hardikpandya/stop-slop" target="_blank" rel="noopener noreferrer">github.com/hardikpandya/stop-slop</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/hardikpandya/stop-slop" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">UI/UX Pro Max Skill</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" rel="noopener noreferrer">github.com/nextlevelbuilder/ui-ux-pro-max-skill</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/remotion-dev/skills" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Remotion AI Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/remotion-dev/skills" target="_blank" rel="noopener noreferrer">github.com/remotion-dev/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/remotion-dev/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://www.agentation.com/install" data-cat="03 — Core Skills, Agents &amp; Engineering Workflows">
+        <div class="gold-top">
+          <span class="gold-name">Agentation install</span>
+          <span class="gold-chip">agentation.com</span><span class="gold-dup" title="Also listed in: Frontend, UI/UX, Content &amp; Creative Skills">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://www.agentation.com/install" target="_blank" rel="noopener noreferrer">www.agentation.com/install</a>
+        <button class="copy-btn gold-copy" data-copy="https://www.agentation.com/install" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-04">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">04</span>Memory, Context &amp; Token Efficiency<span class="gold-count">8</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/topoteretes/cognee" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">Cognee — agent memory</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/topoteretes/cognee" target="_blank" rel="noopener noreferrer">github.com/topoteretes/cognee</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/topoteretes/cognee" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/TencentCloud/TencentDB-Agent-Memory" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">TencentDB-Agent-Memory</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener noreferrer">github.com/TencentCloud/TencentDB-Agent-Memory</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/TencentCloud/TencentDB-Agent-Memory" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/MemPalace/mempalace" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">MemPalace</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/MemPalace/mempalace" target="_blank" rel="noopener noreferrer">github.com/MemPalace/mempalace</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/MemPalace/mempalace" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/thedotmack/claude-mem" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">Claude Mem</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener noreferrer">github.com/thedotmack/claude-mem</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/thedotmack/claude-mem" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/buildingjoshbetter/TrueMemory" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">TrueMemory</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/buildingjoshbetter/TrueMemory" target="_blank" rel="noopener noreferrer">github.com/buildingjoshbetter/TrueMemory</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/buildingjoshbetter/TrueMemory" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/chopratejas/headroom" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">Headroom — context compression / token reduction</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">github.com/chopratejas/headroom</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/chopratejas/headroom" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/tirth8205/code-review-graph" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">Code Review Graph</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Productivity, Review &amp; Developer Experience">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noopener noreferrer">github.com/tirth8205/code-review-graph</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/tirth8205/code-review-graph" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/diegosouzapw/OmniRoute" data-cat="04 — Memory, Context &amp; Token Efficiency">
+        <div class="gold-top">
+          <span class="gold-name">OmniRoute — AI gateway/router</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem; AI Routing, Free / Experimental Access &amp; Ollama">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener noreferrer">github.com/diegosouzapw/OmniRoute</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/diegosouzapw/OmniRoute" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-05">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">05</span>MCP &amp; External Tool Integration<span class="gold-count">4</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/wonderwhy-er/DesktopCommanderMCP" data-cat="05 — MCP &amp; External Tool Integration">
+        <div class="gold-top">
+          <span class="gold-name">DesktopCommanderMCP</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener noreferrer">github.com/wonderwhy-er/DesktopCommanderMCP</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/wonderwhy-er/DesktopCommanderMCP" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/upstash/context7" data-cat="05 — MCP &amp; External Tool Integration">
+        <div class="gold-top">
+          <span class="gold-name">Context7</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/upstash/context7" target="_blank" rel="noopener noreferrer">github.com/upstash/context7</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/upstash/context7" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://modelcontextprotocol.io/" data-cat="05 — MCP &amp; External Tool Integration">
+        <div class="gold-top">
+          <span class="gold-name">Model Context Protocol</span>
+          <span class="gold-chip">modelcontextprotocol.io</span>
+        </div>
+        <a class="gold-url" href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer">modelcontextprotocol.io/</a>
+        <button class="copy-btn gold-copy" data-copy="https://modelcontextprotocol.io/" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="http://github.com/transilienceai/communitytools" data-cat="05 — MCP &amp; External Tool Integration">
+        <div class="gold-top">
+          <span class="gold-name">Community Tools</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Offensive Security, Recon, Bug Bounty &amp; Red Team">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="http://github.com/transilienceai/communitytools" target="_blank" rel="noopener noreferrer">github.com/transilienceai/communitytools</a>
+        <button class="copy-btn gold-copy" data-copy="http://github.com/transilienceai/communitytools" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-06">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">06</span>Plugins &amp; Plugin Ecosystem<span class="gold-count">10</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://claude.com/plugins#plugins" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude plugins marketplace</span>
+          <span class="gold-chip">claude.com</span><span class="gold-dup" title="Also listed in: Claude Code Official Documentation &amp; Official Plugins; Meta / Reference / Discovery Hubs">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://claude.com/plugins#plugins" target="_blank" rel="noopener noreferrer">claude.com/plugins#plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://claude.com/plugins#plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/anthropics/claude-code/tree/main/plugins" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Anthropic Claude Code plugins</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Claude Code Official Documentation &amp; Official Plugins">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/anthropics/claude-code/tree/main/plugins" target="_blank" rel="noopener noreferrer">github.com/anthropics/claude-code/tree/main/plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/anthropics/claude-code/tree/main/plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/composio-community/awesome-claude-plugins" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Awesome Claude Plugins</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Meta / Reference / Discovery Hubs">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/composio-community/awesome-claude-plugins" target="_blank" rel="noopener noreferrer">github.com/composio-community/awesome-claude-plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/composio-community/awesome-claude-plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/diegosouzapw/OmniRoute" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">OmniRoute</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Memory, Context &amp; Token Efficiency; AI Routing, Free / Experimental Access &amp; Ollama">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener noreferrer">github.com/diegosouzapw/OmniRoute</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/diegosouzapw/OmniRoute" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/thedotmack/claude-mem" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Claude Mem</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Memory, Context &amp; Token Efficiency">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener noreferrer">github.com/thedotmack/claude-mem</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/thedotmack/claude-mem" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/chopratejas/headroom" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Headroom</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Memory, Context &amp; Token Efficiency">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">github.com/chopratejas/headroom</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/chopratejas/headroom" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Setup</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Claude Code Official Documentation &amp; Official Plugins; Productivity, Review &amp; Developer Experience">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" target="_blank" rel="noopener noreferrer">github.com/anthropics/claude-plugins-official/tree/main/plugi…</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/rebelytics/one-skill-to-rule-them-all" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Task Observer</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows; Productivity, Review &amp; Developer Experience">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/rebelytics/one-skill-to-rule-them-all" target="_blank" rel="noopener noreferrer">github.com/rebelytics/one-skill-to-rule-them-all</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/rebelytics/one-skill-to-rule-them-all" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/deonmenezes/mantishack" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">Mantishack</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/deonmenezes/mantishack" target="_blank" rel="noopener noreferrer">github.com/deonmenezes/mantishack</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/deonmenezes/mantishack" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/PatrikFehrenbach/h1-brain" data-cat="06 — Plugins &amp; Plugin Ecosystem">
+        <div class="gold-top">
+          <span class="gold-name">H1 Brain</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/PatrikFehrenbach/h1-brain" target="_blank" rel="noopener noreferrer">github.com/PatrikFehrenbach/h1-brain</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/PatrikFehrenbach/h1-brain" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-07">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">07</span>Cybersecurity: Secure Code, AppSec &amp; Vulnerability<span class="gold-count">12</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/semgrep/guardian" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Semgrep Guardian</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/semgrep/guardian" target="_blank" rel="noopener noreferrer">github.com/semgrep/guardian</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/semgrep/guardian" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/semgrep/semgrep" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Semgrep</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/semgrep/semgrep" target="_blank" rel="noopener noreferrer">github.com/semgrep/semgrep</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/semgrep/semgrep" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/ghostsecurity/skills" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Ghost Security Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/ghostsecurity/skills" target="_blank" rel="noopener noreferrer">github.com/ghostsecurity/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/ghostsecurity/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/Security-Phoenix-demo/security-skills-claude-code" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Phoenix Security Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/Security-Phoenix-demo/security-skills-claude-code" target="_blank" rel="noopener noreferrer">github.com/Security-Phoenix-demo/security-skills-claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/Security-Phoenix-demo/security-skills-claude-code" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/arananet/ctf-vuln-hunter" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">CTF Vuln Hunter</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/arananet/ctf-vuln-hunter" target="_blank" rel="noopener noreferrer">github.com/arananet/ctf-vuln-hunter</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/arananet/ctf-vuln-hunter" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/elementalsouls/Claude-BugHunter" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Claude BugHunter</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Offensive Security, Recon, Bug Bounty &amp; Red Team">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener noreferrer">github.com/elementalsouls/Claude-BugHunter</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/elementalsouls/Claude-BugHunter" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Anthropic Cybersecurity Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" target="_blank" rel="noopener noreferrer">github.com/mukul975/Anthropic-Cybersecurity-Skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/aquasecurity/trivy" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Trivy — container / IaC / filesystem security</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/aquasecurity/trivy" target="_blank" rel="noopener noreferrer">github.com/aquasecurity/trivy</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/aquasecurity/trivy" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/google/osv-scanner" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">OSV-Scanner — dependency security</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/google/osv-scanner" target="_blank" rel="noopener noreferrer">github.com/google/osv-scanner</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/google/osv-scanner" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/gitleaks/gitleaks" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Gitleaks — secret detection</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/gitleaks/gitleaks" target="_blank" rel="noopener noreferrer">github.com/gitleaks/gitleaks</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/gitleaks/gitleaks" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/zaproxy/zaproxy" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">OWASP ZAP — web security testing</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/zaproxy/zaproxy" target="_blank" rel="noopener noreferrer">github.com/zaproxy/zaproxy</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/zaproxy/zaproxy" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/projectdiscovery/nuclei" data-cat="07 — Cybersecurity: Secure Code, AppSec &amp; Vulnerability">
+        <div class="gold-top">
+          <span class="gold-name">Nuclei — template-based security testing</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/projectdiscovery/nuclei" target="_blank" rel="noopener noreferrer">github.com/projectdiscovery/nuclei</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/projectdiscovery/nuclei" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-08">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">08</span>Offensive Security, Recon, Bug Bounty &amp; Red Team<span class="gold-count">17</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/elementalsouls/Claude-OSINT" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude OSINT</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/elementalsouls/Claude-OSINT" target="_blank" rel="noopener noreferrer">github.com/elementalsouls/Claude-OSINT</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/elementalsouls/Claude-OSINT" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="http://github.com/transilienceai/communitytools" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Community Tools</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: MCP &amp; External Tool Integration">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="http://github.com/transilienceai/communitytools" target="_blank" rel="noopener noreferrer">github.com/transilienceai/communitytools</a>
+        <button class="copy-btn gold-copy" data-copy="http://github.com/transilienceai/communitytools" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/s0ld13rr/claude-code-backdoor" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Backdoor</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/s0ld13rr/claude-code-backdoor" target="_blank" rel="noopener noreferrer">github.com/s0ld13rr/claude-code-backdoor</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/s0ld13rr/claude-code-backdoor" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/chAng-L19/codex-redteam-mode" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Codex Red Team Mode</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/chAng-L19/codex-redteam-mode" target="_blank" rel="noopener noreferrer">github.com/chAng-L19/codex-redteam-mode</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/chAng-L19/codex-redteam-mode" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/uphiago/recon-skills" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Recon Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/uphiago/recon-skills" target="_blank" rel="noopener noreferrer">github.com/uphiago/recon-skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/uphiago/recon-skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/zhaoxuya520/reverse-skill" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Reverse Skill</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener noreferrer">github.com/zhaoxuya520/reverse-skill</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/zhaoxuya520/reverse-skill" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/SnailSploit/Claude-Red" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude Red</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/SnailSploit/Claude-Red" target="_blank" rel="noopener noreferrer">github.com/SnailSploit/Claude-Red</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/SnailSploit/Claude-Red" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/elementalsouls/Claude-BugHunter" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude BugHunter</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Cybersecurity: Secure Code, AppSec &amp; Vulnerability">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener noreferrer">github.com/elementalsouls/Claude-BugHunter</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/elementalsouls/Claude-BugHunter" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/shuvonsec/claude-bug-bounty" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude Bug Bounty</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/shuvonsec/claude-bug-bounty" target="_blank" rel="noopener noreferrer">github.com/shuvonsec/claude-bug-bounty</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/shuvonsec/claude-bug-bounty" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/hypnguyen1209/offensive-claude" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Offensive Claude</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/hypnguyen1209/offensive-claude" target="_blank" rel="noopener noreferrer">github.com/hypnguyen1209/offensive-claude</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/hypnguyen1209/offensive-claude" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/elder-plinius/T3MP3ST" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">T3MP3ST</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/elder-plinius/T3MP3ST" target="_blank" rel="noopener noreferrer">github.com/elder-plinius/T3MP3ST</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/elder-plinius/T3MP3ST" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/projectdiscovery" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">ProjectDiscovery</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/projectdiscovery" target="_blank" rel="noopener noreferrer">github.com/projectdiscovery</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/projectdiscovery" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/Eyadkelleh/awesome-claude-skills-security" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Cybersecurity Skills / AI Red Team</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/Eyadkelleh/awesome-claude-skills-security" target="_blank" rel="noopener noreferrer">github.com/Eyadkelleh/awesome-claude-skills-security</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/Eyadkelleh/awesome-claude-skills-security" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/briiirussell/cybersecurity-skills" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Cybersecurity / Red Team / Blue Team Skills</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/briiirussell/cybersecurity-skills" target="_blank" rel="noopener noreferrer">github.com/briiirussell/cybersecurity-skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/briiirussell/cybersecurity-skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/Yuyz0112/claude-code-reverse" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Reverse Engineering</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/Yuyz0112/claude-code-reverse" target="_blank" rel="noopener noreferrer">github.com/Yuyz0112/claude-code-reverse</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/Yuyz0112/claude-code-reverse" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/razakiau/claude-code" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Security Research</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/razakiau/claude-code" target="_blank" rel="noopener noreferrer">github.com/razakiau/claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/razakiau/claude-code" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/fazxes/claude-code" data-cat="08 — Offensive Security, Recon, Bug Bounty &amp; Red Team">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Internals / Security Research</span>
+          <span class="gold-chip">github.com</span>
+        </div>
+        <a class="gold-url" href="https://github.com/fazxes/claude-code" target="_blank" rel="noopener noreferrer">github.com/fazxes/claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/fazxes/claude-code" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-09">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">09</span>Productivity, Review &amp; Developer Experience<span class="gold-count">5</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/tirth8205/code-review-graph" data-cat="09 — Productivity, Review &amp; Developer Experience">
+        <div class="gold-top">
+          <span class="gold-name">Code Review Graph</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Memory, Context &amp; Token Efficiency">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noopener noreferrer">github.com/tirth8205/code-review-graph</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/tirth8205/code-review-graph" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/rebelytics/one-skill-to-rule-them-all" data-cat="09 — Productivity, Review &amp; Developer Experience">
+        <div class="gold-top">
+          <span class="gold-name">Task Observer</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows; Plugins &amp; Plugin Ecosystem">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/rebelytics/one-skill-to-rule-them-all" target="_blank" rel="noopener noreferrer">github.com/rebelytics/one-skill-to-rule-them-all</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/rebelytics/one-skill-to-rule-them-all" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/DietrichGebert/ponytail" data-cat="09 — Productivity, Review &amp; Developer Experience">
+        <div class="gold-top">
+          <span class="gold-name">Ponytail</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">github.com/DietrichGebert/ponytail</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/DietrichGebert/ponytail" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/garrytan/gstack" data-cat="09 — Productivity, Review &amp; Developer Experience">
+        <div class="gold-top">
+          <span class="gold-name">gstack</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/garrytan/gstack" target="_blank" rel="noopener noreferrer">github.com/garrytan/gstack</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/garrytan/gstack" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" data-cat="09 — Productivity, Review &amp; Developer Experience">
+        <div class="gold-top">
+          <span class="gold-name">Claude Code Setup</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Claude Code Official Documentation &amp; Official Plugins; Plugins &amp; Plugin Ecosystem">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" target="_blank" rel="noopener noreferrer">github.com/anthropics/claude-plugins-official/tree/main/plugi…</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-10">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">10</span>AI Routing, Free / Experimental Access &amp; Ollama<span class="gold-count">4</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/diegosouzapw/OmniRoute" data-cat="10 — AI Routing, Free / Experimental Access &amp; Ollama">
+        <div class="gold-top">
+          <span class="gold-name">OmniRoute</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Memory, Context &amp; Token Efficiency; Plugins &amp; Plugin Ecosystem">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener noreferrer">github.com/diegosouzapw/OmniRoute</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/diegosouzapw/OmniRoute" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/Alishahryar1/free-claude-code" data-cat="10 — AI Routing, Free / Experimental Access &amp; Ollama">
+        <div class="gold-top">
+          <span class="gold-name">Free Claude Code</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Claude Code Guides, Learning &amp; Reference">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener noreferrer">github.com/Alishahryar1/free-claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/Alishahryar1/free-claude-code" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://docs.ollama.com/integrations/claude-code" data-cat="10 — AI Routing, Free / Experimental Access &amp; Ollama">
+        <div class="gold-top">
+          <span class="gold-name">Ollama + Claude Code</span>
+          <span class="gold-chip">docs.ollama.com</span>
+        </div>
+        <a class="gold-url" href="https://docs.ollama.com/integrations/claude-code" target="_blank" rel="noopener noreferrer">docs.ollama.com/integrations/claude-code</a>
+        <button class="copy-btn gold-copy" data-copy="https://docs.ollama.com/integrations/claude-code" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://docs.ollama.com/api/anthropic-compatibility" data-cat="10 — AI Routing, Free / Experimental Access &amp; Ollama">
+        <div class="gold-top">
+          <span class="gold-name">Ollama Anthropic-compatible API</span>
+          <span class="gold-chip">docs.ollama.com</span>
+        </div>
+        <a class="gold-url" href="https://docs.ollama.com/api/anthropic-compatibility" target="_blank" rel="noopener noreferrer">docs.ollama.com/api/anthropic-compatibility</a>
+        <button class="copy-btn gold-copy" data-copy="https://docs.ollama.com/api/anthropic-compatibility" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-11">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">11</span>Frontend, UI/UX, Content &amp; Creative Skills<span class="gold-count">7</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/pbakaus/impeccable" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">Impeccable</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener noreferrer">github.com/pbakaus/impeccable</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/pbakaus/impeccable" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">UI/UX Pro Max Skill</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" rel="noopener noreferrer">github.com/nextlevelbuilder/ui-ux-pro-max-skill</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/coreyhaines31/marketingskills" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">Marketing Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener noreferrer">github.com/coreyhaines31/marketingskills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/coreyhaines31/marketingskills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/hardikpandya/stop-slop" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">Stop Slop</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/hardikpandya/stop-slop" target="_blank" rel="noopener noreferrer">github.com/hardikpandya/stop-slop</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/hardikpandya/stop-slop" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/remotion-dev/skills" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">Remotion AI Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/remotion-dev/skills" target="_blank" rel="noopener noreferrer">github.com/remotion-dev/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/remotion-dev/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/blader/humanizer" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">Humanizer</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/blader/humanizer" target="_blank" rel="noopener noreferrer">github.com/blader/humanizer</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/blader/humanizer" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://www.agentation.com/install" data-cat="11 — Frontend, UI/UX, Content &amp; Creative Skills">
+        <div class="gold-top">
+          <span class="gold-name">Agentation</span>
+          <span class="gold-chip">agentation.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://www.agentation.com/install" target="_blank" rel="noopener noreferrer">www.agentation.com/install</a>
+        <button class="copy-btn gold-copy" data-copy="https://www.agentation.com/install" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-cat" id="gold-12">
+    <h3 class="gold-cat-title"><span class="gold-cat-num">12</span>Meta / Reference / Discovery Hubs<span class="gold-count">5</span></h3>
+    <div class="gold-grid">
+      <div class="gold-card" data-url="https://github.com/vercel-labs/skills" data-cat="12 — Meta / Reference / Discovery Hubs">
+        <div class="gold-top">
+          <span class="gold-name">Vercel Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/vercel-labs/skills" target="_blank" rel="noopener noreferrer">github.com/vercel-labs/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/vercel-labs/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills" data-cat="12 — Meta / Reference / Discovery Hubs">
+        <div class="gold-top">
+          <span class="gold-name">Vercel Find Skills</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills" target="_blank" rel="noopener noreferrer">github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/vercel-labs/skills/tree/main/skills%2Ffind-skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://claudemarketplaces.com/skills" data-cat="12 — Meta / Reference / Discovery Hubs">
+        <div class="gold-top">
+          <span class="gold-name">Claude Marketplaces Skills</span>
+          <span class="gold-chip">claudemarketplaces.com</span><span class="gold-dup" title="Also listed in: Core Skills, Agents &amp; Engineering Workflows">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://claudemarketplaces.com/skills" target="_blank" rel="noopener noreferrer">claudemarketplaces.com/skills</a>
+        <button class="copy-btn gold-copy" data-copy="https://claudemarketplaces.com/skills" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://github.com/composio-community/awesome-claude-plugins" data-cat="12 — Meta / Reference / Discovery Hubs">
+        <div class="gold-top">
+          <span class="gold-name">Awesome Claude Plugins</span>
+          <span class="gold-chip">github.com</span><span class="gold-dup" title="Also listed in: Plugins &amp; Plugin Ecosystem">↻ ×2</span>
+        </div>
+        <a class="gold-url" href="https://github.com/composio-community/awesome-claude-plugins" target="_blank" rel="noopener noreferrer">github.com/composio-community/awesome-claude-plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://github.com/composio-community/awesome-claude-plugins" title="Copy link">copy</button>
+      </div>
+      <div class="gold-card" data-url="https://claude.com/plugins#plugins" data-cat="12 — Meta / Reference / Discovery Hubs">
+        <div class="gold-top">
+          <span class="gold-name">Official Claude Plugins</span>
+          <span class="gold-chip">claude.com</span><span class="gold-dup" title="Also listed in: Claude Code Official Documentation &amp; Official Plugins; Plugins &amp; Plugin Ecosystem">↻ ×3</span>
+        </div>
+        <a class="gold-url" href="https://claude.com/plugins#plugins" target="_blank" rel="noopener noreferrer">claude.com/plugins#plugins</a>
+        <button class="copy-btn gold-copy" data-copy="https://claude.com/plugins#plugins" title="Copy link">copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="gold-note">
+    <p>📦 <strong>Source:</strong> the <em>Claude Code Goldmine — Organized Skills, Plugins, MCP, Cybersecurity &amp; Productivity Resources</em> collection. <strong>Duplicates are intentional:</strong> one tool can genuinely belong to several categories (e.g., an MCP server that is also offensive tooling, a plugin that is also a skill). Every duplicate stays in its section, and no link repeats within the same section — the <code>↻</code> badge shows the other categories that list the same link. All URLs verified returning HTTP 200 in August 2026.</p>
+  </div>
+</section>
+
 </section>
 
 <footer class="footer" id="footer">
@@ -1975,6 +3020,13 @@ You are the documentation specialist. Follow these rules:
     var name = h ? h.textContent.trim() : '';
     var desc = p ? p.textContent.trim() : '';
     index.push({ name: name, desc: desc, extra: '', sect: sectionNameOf(card), target: card, kind: 'card' });
+  });
+  // goldmine tool cards
+  $$('.gold-card').forEach(function(card){
+    var name = card.querySelector('.gold-name').textContent.trim();
+    var url = card.getAttribute('data-url') || '';
+    var cat = card.getAttribute('data-cat') || '';
+    index.push({ name: name, desc: cat, extra: url, sect: 'Goldmine', target: card, kind: 'gold' });
   });
   // table rows
   $$('table tr').forEach(function(tr){
